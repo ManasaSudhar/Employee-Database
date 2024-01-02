@@ -13,3 +13,9 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS employee_details.departments
     OWNER to postgres;
+
+---Insert Statement
+
+INSERT INTO employee_details.departments(
+	dept_no, dept_name)
+	VALUES (?, ?);
